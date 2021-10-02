@@ -22,6 +22,7 @@ while True:
        press 13: Delete folder/directory
        press 14: To add any New user
        press 15: Exit()
+       press 16: zenity
       """)
       print()
       print("enter your choice:" ,end='')
@@ -81,4 +82,5 @@ while True:
          exit()
       else:
            print("invalid choice")
-
+      elif int(p)==16:
+         os.system("zenity --info --text='zenity testing'")
